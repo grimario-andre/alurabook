@@ -1,0 +1,133 @@
+.carrossel__title{
+    background-color: var(--pure-White);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--orange);
+    padding: 1em 0 0.5em 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-pagination{
+    position: initial !important;
+    padding: .5em 0px;
+}
+
+.card{
+    background: var(--pure-White);
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.card__description{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.description__title{
+    color: var(--orange);
+    font-weight: 700;
+}
+
+.description__tittle-book{
+    color: blue;
+    font-weight: 700;
+    font-size: 18px;
+    margin: 0.5em 0em;
+}
+
+.description__text{
+    font-size: 14px;   
+}
+
+.card__buttons, .buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons__item{
+    margin: 0 0.5em;
+}
+
+.buttons__anchor{
+    background-color: var(--orange);
+    padding: 1em 2.2em;
+    color: var(--pure-White);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.buttons__anchor:active {
+    background-color: var(--azul);
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    display: none !important;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__title {
+        padding: 2em 0px 0.5em;
+    }
+
+    .swiper-wrapper {
+        margin: 2em 0 2em 0;
+    }
+
+    .swiper{
+        width: 60%;
+    }
+    
+    .swiper-button-prev, 
+    .swiper-button-next {
+        display: block !important;
+        top: 55% !important;
+    }
+
+    .card {
+        width: 40%;
+        margin: 2em auto;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .carrossel__container{
+        display: flex;
+        align-items: center;
+        gap: 4em;
+        margin: 0px 15vw 3em 15vw;
+    }
+
+    .card {
+        margin: 0px auto;
+    }
+
+    .swiper-wrapper {
+        margin: 2em 0;
+    }
+
+    .swiper{
+        width: 50%;
+        margin-right: 0px !important;
+    }
+
+    .description__title {
+        font-size: 32px;
+    }
+
+    .description__text{
+        font-size: 16px;   
+    }
+
+    .description__tittle-book {
+        margin: 0.75em 0em
+    }
+}
